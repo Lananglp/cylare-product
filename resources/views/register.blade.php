@@ -18,12 +18,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:title" content="Cylare Website v2">
+  <meta property="og:title" content="Cylare Product">
   <meta property="og:description" content="Merupakan website untuk memanajemen data sehari hari anda.">
-  <meta name="keywords" content="contoh sistem absensi, contoh sistem absensi siswa, contoh sistem absensi karyawan, contoh sistem absensi berbasis web, contoh sistem absensi berbasis website, cylare, lananglp, contoh website laravel, contoh website mengunakan laravel">
-  <meta property="og:image" content="/assets/img/logos/myLogo.png">
-  <meta property="og:url" content="https://lananglp2.000webhostapp.com">
-  <link rel="icon" type="image/png" href="/assets/img/logos/myLogo.png">
+  <meta name="keywords" content="website sistem manajemen cylare">
+  <meta property="og:image" content="../assets/img/logos/myLogo.png">
+  <meta property="og:url" content="https://cylare.online">
+  <link rel="icon" type="image/png" href="../assets/img/logos/myLogo.png">
   <title>
     Cylare Product A
   </title>
