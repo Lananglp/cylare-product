@@ -18,14 +18,22 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:title" content="Cylare Product">
-  <meta property="og:description" content="Merupakan website untuk memanajemen data sehari hari anda.">
-  <meta name="keywords" content="website sistem manajemen cylare">
-  <meta property="og:image" content="../assets/img/logos/myLogo.png">
-  <meta property="og:url" content="https://cylare.online">
-  <link rel="icon" type="image/png" href="../assets/img/logos/myLogo.png">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="robots" content="noodp">
+  <link rel="canonical" href="https://cylare.online/">
+  <meta itemprop="name" content="Cylare management System">
+  <meta property="og:title" content="Cylare management System">
+  <meta property="og:site_name" content="Cylare management System">
+  <meta property="og:type" content="website">
+  <meta name="description" content="Website dengan sistem manajemen yang dibuat menggunakan laravel 10 dikembangkan oleh Kadek Lanang Lanusa Putera">
+  <meta itemprop="description" content="Website dengan sistem manajemen yang dibuat menggunakan laravel 10 dikembangkan oleh Kadek Lanang Lanusa Putera">
+  <meta property="og:description" content="Website dengan sistem manajemen yang dibuat menggunakan laravel 10 dikembangkan oleh Kadek Lanang Lanusa Putera">
+  <meta name="keywords" content="cylare, lananglp, kadek lanang, kadek lanang lanusa, kadek lanang lanusa putera, lanang lanusa, lanang lanusa putera, contoh website laravel">
+  <meta property="og:image" content="https://cylare.online/assets/img/logos/myLogo.png">
+  <meta property="og:url" content="https://cylare.online/">
+  <link rel="icon" type="image/png" href="https://cylare.online/assets/img/logos/myLogo.png">
   <title>
-    Cylare Product A
+    Cylare management System
   </title>
   <!--     Fonts and icons     -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
