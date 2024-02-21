@@ -29,9 +29,9 @@
   <meta itemprop="description" content="Website dengan sistem manajemen yang dibuat menggunakan laravel 10 dikembangkan oleh Kadek Lanang Lanusa Putera">
   <meta property="og:description" content="Website dengan sistem manajemen yang dibuat menggunakan laravel 10 dikembangkan oleh Kadek Lanang Lanusa Putera">
   <meta name="keywords" content="cylare, lananglp, kadek lanang, kadek lanang lanusa, kadek lanang lanusa putera, lanang lanusa, lanang lanusa putera, contoh website laravel">
-  <meta property="og:image" content="https://cylare.online/assets/img/logos/myLogo.png">
+  <meta property="og:image" content="https://cylare.online/assets/img/logos/cylareLogo.png">
   <meta property="og:url" content="https://cylare.online/">
-  <link rel="icon" type="image/png" href="https://cylare.online/assets/img/logos/myLogo.png">
+  <link rel="icon" type="image/png" href="https://cylare.online/assets/img/logos/cylareLogo.png">
   <title>
     Cylare Management System
   </title>

@@ -29,9 +29,9 @@
   <meta itemprop="description" content="Website dengan sistem manajemen yang dibuat menggunakan laravel 10 dikembangkan oleh Kadek Lanang Lanusa Putera">
   <meta property="og:description" content="Website dengan sistem manajemen yang dibuat menggunakan laravel 10 dikembangkan oleh Kadek Lanang Lanusa Putera">
   <meta name="keywords" content="cylare, lananglp, kadek lanang, kadek lanang lanusa, kadek lanang lanusa putera, lanang lanusa, lanang lanusa putera, contoh website laravel">
-  <meta property="og:image" content="https://cylare.online/assets/img/logos/myLogo512.png">
+  <meta property="og:image" content="https://cylare.online/assets/img/logos/cylareLogo.png">
   <meta property="og:url" content="https://cylare.online/">
-  <link rel="icon" type="image/png" href="../assets/img/logos/myLogo.png">
+  <link rel="icon" type="image/png" href="https://cylare.online/assets/img/logos/cylareLogo.png">
   <title>
     Cylare Management System
   </title>
@@ -146,7 +146,7 @@
   <nav class="navbar navbar-expand-lg position-absolute top-0 z-index-3 w-100 shadow-none mb-5 navbar-transparent">
     <div class="container">
       <a class="navbar-brand font-weight-bold ms-lg-0 ms-3 text-white d-flex align-items-center" href="../pages/dashboard.html">
-        <img src="/assets/img/logos/myLogo.png" alt="myLogo.png" width="32" class="me-2"> Cylare Management System
+        <img src="/assets/img/logos/cylareLogo.png" alt="cylareLogo.png" width="32" class="me-2"> Cylare Management System
       </a>
       <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon mt-2">
