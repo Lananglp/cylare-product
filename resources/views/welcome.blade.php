@@ -158,27 +158,28 @@
       <div class="collapse navbar-collapse" id="navigation">
         <ul class="navbar-nav ms-auto ms-xl-auto mt-2 mt-lg-0">
           <li class="nav-item">
-            <a class="nav-link d-flex align-items-center me-2 active" aria-current="page" href="../pages/dashboard.html">
+            <button class="nav-link d-flex align-items-center me-2 active bg-transparent border-0" type="button" data-bs-toggle="modal" data-bs-target="#modalSignIn"><i class="fa fa-chart-pie opacity-6  me-1"></i> Dashboard</button>
+            {{-- <a class="nav-link d-flex align-items-center me-2 active" aria-current="page" href="../pages/dashboard.html">
               <i class="fa fa-chart-pie opacity-6  me-1"></i>
               Dashboard
-            </a>
+            </a> --}}
           </li>
           <li class="nav-item">
-            <a class="nav-link me-2" href="../pages/profile.html">
+            <a class="nav-link me-2" href="#tentangSaya">
               <i class="fa fa-user opacity-6  me-1"></i>
-              Profile
+              Tentang saya
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link me-2" href="../pages/sign-up.html">
-              <i class="fas fa-user-circle opacity-6  me-1"></i>
-              Sign Up
+            <a class="nav-link me-2" href="#website">
+              <i class="fas fa-globe opacity-6  me-1"></i>
+              Website
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link me-2" href="../pages/sign-in.html">
-              <i class="fas fa-key opacity-6  me-1"></i>
-              Sign In
+            <a class="nav-link me-2" href="#musik">
+              <i class="fas fa-music opacity-6  me-1"></i>
+              Musik
             </a>
           </li>
         </ul>
@@ -226,7 +227,7 @@
       </div>
     </section>
 
-    <section class="container">
+    <section id="tentangSaya" class="container">
       <div class="row px-4 py-5 my-4">
         <div class="col-lg-3 d-flex justify-content-center align-items-center">
           <h2 class="h3">Tentang Saya</h2>
@@ -288,7 +289,7 @@
       </div>
     </section>
 
-    <section class="container my-5 pt-4 pt-lg-5">
+    <section id="website" class="container my-5 pt-4 pt-lg-5">
       <div class="d-flex flex-column justify-content-center align-items-center">
         <h2 class="h3">Website apa saja yang telah saya kembangkan?</h2>
         <p class="col-lg-7 text-center mb-0">Berikut merupakan website yang telah saya kembangkan dari yang proyek pribadi hingga proyek untuk sebuah perusahaan, website ini merupakan hasil kerja keras saya selama setahun lebih mendalami dunia programan website.</p>
@@ -318,37 +319,45 @@
       </div>
     </section>
 
-    <section class="bg-gradient-dark" style="margin-top: 6rem;">
+    <section id="musik" class="bg-gradient-dark" style="margin-top: 6rem;">
       <div class="container py-5">
         <div class="d-flex flex-column justify-content-center align-items-center my-3">
           <h2 class="text-white h3">Apakah ada keahlian lain selain pemrograman website?</h2>
           <p class="col-lg-7 text-silver text-center mb-0">Selain pemrograman website, saya memiliki bakat dalam membuat atau menciptakan musik elektronik (EDM), bukan hanya itu beberapa musik lokal ada beberapa saya remix, musik-musik yang telah saya buat saya posting semua di youtube.</p>
         </div>
-        {{-- <div class="row g-3 mt-5 pt-5">
+        <div class="row justify-content-center mt-4 pt-4">
           <div class="col-lg-4">
-            <div class="d-flex flex-column justify-content-center h-100">
-              <h3 class="h4">SIA Alfa Prima</h3>
-              <p>Sistem Informasi Akademik Alfa Prima merupakan salah satu website yang saya kembangkan dibagian Front End.</p>
-            </div>
-          </div>
-          <div class="col-lg-8">
-            <div class="d-flex flex-column justify-content-center align-items-center position-relative w-100 h-100">
-              <div style="padding: 5rem 0rem;">
-                <div class="ratio ratio-16x9 position-absolute rounded-3 shadow" style="top: 40%; left: 0%; transform: translateY(-50%); width: 40%;">
-                  <img src="../assets/img/testimonial/alfa2.png" alt="alfa1.png" loading='lazy' class="rounded-3">
+            <div class="bg-dark shadow-lg" style="border-radius: 1.5rem 1.5rem 1rem 1rem;">
+              <div class="position-relative py-5" style="background: url(../assets/img/curved-images/curved-11.jpg); border-radius: 1.25rem 1.25rem 0px 0px;">
+                <div class="mask bg-gradient-dark opacity-9" style="border-radius: 1rem 1rem 0px 0px;"></div>
+              </div>
+              <div class="position-relative text-center px-3 pb-1" style="padding-top: 2.5rem;">
+                <div class="position-absolute" style="top: -32px; left: 50%; transform: translateX(-50%);">
+                  <img src="https://cylare.online/assets/img/logos/cylareLogo.png" alt="" class="img-fluid">
                 </div>
-                <div class="ratio ratio-16x9 position-absolute rounded-3 shadow" style="top: 40%; right: 0%; transform: translateY(-50%); width: 40%;">
-                  <img src="../assets/img/testimonial/alfa3.png" alt="alfa2.png" loading='lazy' class="rounded-3">
-                </div>
-                <div class="ratio ratio-16x9 position-absolute rounded-3 shadow" style="top: 60%; left: 50%; transform: translateX(-50%) translateY(-50%); width: 45%;">
-                  <img src="../assets/img/testimonial/alfa1.png" alt="alfa3.png" loading='lazy' class="rounded-3">
-                </div>
+                <h6 class="text-white mt-0">Cylare</h6>
+                <p class="text-silver">@cylare_
+                  ‧
+                  413 subscriber
+                  ‧
+                  27 video</p>
+                  <a href="http://www.youtube.com/@cylare_" target="blank_" class="btn btn-sm btn-danger w-100">Kunjungi Youtube</a>
               </div>
             </div>
           </div>
-        </div> --}}
+          <div class="col-lg-4 d-flex flex-column justify-content-center py-4">
+            <p class="text-silver text-sm">Berikut salah satu musik remix buatan saya, mungkin menggunakan kata remix adalah salah besar karena saya mengambil vokal dari musik Dewa 19, jadi saya gunakan kata bootleg untuk musik ini.</p>
+            <p class="text-white">Dewa 19 - Separuh Nafas (Deep House Version)</p>
+              <audio controls>
+                <source src="../assets/music/separuh_nafas.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
+          </div>
+        </div>
       </div>
     </section>
+
+    
     {{-- <section class="min-vh-100 mb-8">
       <div class="page-header align-items-start min-vh-50 pt-5 pb-11 m-3 border-radius-lg" style="background-image: url('../assets/img/curved-images/curved14.jpg');">
         <span class="mask bg-gradient-dark opacity-6"></span>
@@ -446,23 +455,15 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mb-4 mx-auto text-center">
-            <a href="javascript:;" target="_blank" class="text-secondary me-xl-5 me-3 mb-sm-0 mb-2">
-              Company
+            <button class="text-secondary me-xl-5 me-3 mb-sm-0 mb-2 bg-transparent border-0" type="button" data-bs-toggle="modal" data-bs-target="#modalSignIn">Dashboard</button>
+            <a href="#tentangSaya" class="text-secondary me-xl-5 me-3 mb-sm-0 mb-2">
+              Tentang saya
             </a>
-            <a href="javascript:;" target="_blank" class="text-secondary me-xl-5 me-3 mb-sm-0 mb-2">
-              About Us
+            <a href="#website" class="text-secondary me-xl-5 me-3 mb-sm-0 mb-2">
+              Website
             </a>
-            <a href="javascript:;" target="_blank" class="text-secondary me-xl-5 me-3 mb-sm-0 mb-2">
-              Team
-            </a>
-            <a href="javascript:;" target="_blank" class="text-secondary me-xl-5 me-3 mb-sm-0 mb-2">
-              Products
-            </a>
-            <a href="javascript:;" target="_blank" class="text-secondary me-xl-5 me-3 mb-sm-0 mb-2">
-              Blog
-            </a>
-            <a href="javascript:;" target="_blank" class="text-secondary me-xl-5 me-3 mb-sm-0 mb-2">
-              Pricing
+            <a href="#musik" class="text-secondary me-xl-5 me-3 mb-sm-0 mb-2">
+              Musik
             </a>
           </div>
           <div class="col-lg-8 mx-auto text-center mb-4 mt-2">
