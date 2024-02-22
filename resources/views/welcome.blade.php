@@ -357,7 +357,59 @@
       </div>
     </section>
 
-    
+    <section class="container">
+      <div class="d-flex flex-column justify-content-center align-items-center my-5">
+        <h2 class="h3 text-center">Bagikan pengalamanmu serta tinggalkan komentar di bawah!</h2>
+        <p class="col-lg-7 text-center mb-0">Komentar yang baik adalah kunci untuk membangun komunitas yang positif; dengan memberikan masukan yang bijaksana, konstruktif, dan memperkaya, kita dapat saling menginspirasi dan tumbuh bersama.</p>
+      </div>
+      <div class="row">
+        <div class="col-lg-3">
+          <div style="position: -webkit-sticky; position: sticky; top: 25%;">
+            <h5 class="font-weight-bolder"><i class="fa fa-fw fa-pen"></i> Buat komentar anda.</h5>
+            <form action="/komentar/create" method="post">
+              @csrf
+              <div class="mb-2">
+                <label for="name">Nama <span class="text-secondary">*Opsional</span></label>
+                <input type="text" id="name" name="name" class="form-control form-control-sm" placeholder="Ketik disini...">
+              </div>
+              <div class="mb-2">
+                <label for="komentar">Komentar</label>
+                <textarea id="komentar" name="komentar" class="form-control form-control-sm" rows="4" placeholder="ketik disini..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-sm bg-gradient-info">Kirim</button>
+            </form>
+          </div>
+        </div>
+        <div class="col-lg-9">
+          <div class="h-100">
+            <p>{{$komentar->count()}} Komentar</p>
+            @if ($komentar->count() > 0)
+              @foreach ($komentar as $k)
+                <div>
+                  <h6 class="mb-0"><i class="fa fa-fw fa-user me-1"></i>{{$k->name}}</h6>
+                  <p class="mb-2 text-sm ps-4">{{{$k->tanggal}}}</p>
+                  <p class="ps-4">{{$k->komentar}}</p>
+                </div>
+                @if ($k->balasan !== null)
+                <div class="ps-4 d-flex">
+                  <i class="text-secondary fa fa-fw fa-angle-double-right me-2 mt-1"></i>
+                  <div>
+                    <h6 class="mb-0 text-info"><i class="fa fa-fw fa-user me-1"></i>Admin</h6>
+                    <p class="mb-2 text-sm ps-4">{{$k->tanggal_balasan}}</p>
+                    <p class="ps-4">{{$k->balasan}}</p>
+                  </div>
+                </div>
+                @endif
+              @endforeach
+            @else
+                <div>
+                  <p class="mb-0">Saat ini belum ada komentar, ayo jadilah yang pertama untuk berkomentar.</p>
+                </div>
+            @endif
+          </div>
+        </div>
+      </div>
+    </section>
     {{-- <section class="min-vh-100 mb-8">
       <div class="page-header align-items-start min-vh-50 pt-5 pb-11 m-3 border-radius-lg" style="background-image: url('../assets/img/curved-images/curved14.jpg');">
         <span class="mask bg-gradient-dark opacity-6"></span>
@@ -590,9 +642,9 @@
     }
   </script>
   <!-- Github buttons -->
-  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  {{-- <script async defer src="https://buttons.github.io/buttons.js"></script> --}}
   <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
-  <script src="../assets/js/soft-ui-dashboard.min.js?v=1.0.7"></script>
+  {{-- <script src="../assets/js/soft-ui-dashboard.min.js?v=1.0.7"></script> --}}
 
   <script>
     const myAlert = document.getElementById("myAlert");

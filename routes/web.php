@@ -8,6 +8,7 @@ use App\Http\Controllers\LaporanHarianController;
 use App\Http\Controllers\ManajemenUangController;
 use App\Http\Controllers\AbsensiController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\KomentarController;
 
 use Carbon\Carbon;
 
@@ -27,9 +28,8 @@ use App\Models\RekapUang;
 */
 
 Route::middleware('guest')->group(function () {
-    Route::get('/', function () {
-        return view('welcome');
-    });
+    Route::get('/', [KomentarController::class, 'index']);
+    Route::post('/komentar/create', [KomentarController::class, 'create']);
     
     Route::get('/register', function () {
         return view('register');
@@ -85,4 +85,8 @@ Route::middleware('OnLogin')->group(function () {
     Route::get('/absensi', [AbsensiController::class, 'index'])->name('Absensi');
     Route::post('/absensi/store', [AbsensiController::class, 'store']);
     Route::post('/absensi/update/{id}', [AbsensiController::class, 'update']);
+
+    Route::get('/komentar-publik', [KomentarController::class, 'admin'])->name('Komentar Publik');
+    Route::post('/komentar-publik/update/{id}', [KomentarController::class, 'update']);
+    Route::delete('/komentar-publik/delete/{id}', [KomentarController::class, 'destroy']);
 });
